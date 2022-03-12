@@ -76,7 +76,7 @@ onMounted(async () => {
       v-if="placement !== 'page' && tier !== 'special'"
       href="/sponsor/"
       class="sponsor-item action"
-    >Your logo</a>
+    >ロゴを掲載してみませんか?</a>
   </div>
 </template>
 
