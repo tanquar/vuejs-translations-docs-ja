@@ -342,9 +342,9 @@ Let's look at this search field:
 
 ```vue-html
 <form role="search">
-  <label for="search" class="hidden-visually">Search: </label>
+  <label for="search" class="hidden-visually">検索: </label>
   <input type="text" name="search" id="search" v-model="search" />
-  <button type="submit">Search</button>
+  <button type="submit">検索</button>
 </form>
 ```
 
@@ -366,7 +366,7 @@ We can use CSS to visually hide elements but keep them available for assistive t
 }
 ```
 
-<!-- <common-codepen-snippet title="Form Search" slug="QWdMqWy" :height="265" tab="js,result" theme="light" :preview="false" :editable="false" /> -->
+<!-- <common-codepen-snippet title="フォームの検索" slug="QWdMqWy" :height="265" tab="js,result" theme="light" :preview="false" :editable="false" /> -->
 
 #### `aria-hidden="true"`
 
@@ -406,13 +406,13 @@ You can use this technique to create functional images.
 
   ```vue-html
   <form role="search">
-    <label for="search" class="hidden-visually">Search: </label>
+    <label for="search" class="hidden-visually">検索: </label>
     <input type="text" name="search" id="search" v-model="search" />
     <input
       type="image"
       class="btnImg"
       src="https://img.icons8.com/search"
-      alt="Search"
+      alt="検索"
     />
   </form>
   ```
@@ -421,11 +421,11 @@ You can use this technique to create functional images.
 
 ```vue-html
 <form role="search">
-  <label for="searchIcon" class="hidden-visually">Search: </label>
+  <label for="searchIcon" class="hidden-visually">検索: </label>
   <input type="text" name="searchIcon" id="searchIcon" v-model="searchIcon" />
   <button type="submit">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <span class="hidden-visually">Search</span>
+    <span class="hidden-visually">検索</span>
   </button>
 </form>
 ```
