@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1376" height="440">
+    <!-- <image href="./directive_en.png" /> -->
+    <text x="255" y="108" font-family="Noto Sans Mono" font-size="48">
+        <tspan fill="#41b882">
+            v-on:submit.prevent=&quot;onSubmit&quot;
+        </tspan>
+    </text>
+    <path stroke="#41b882" stroke-width="6" fill="none" d="M 254 133 H 368" />
+    <path stroke="#9858ff" stroke-width="6" fill="none" d="M 398 133 H 568" />
+    <path stroke="#ff6464" stroke-width="6" fill="none" d="M 580 133 H 800" />
+    <path stroke="#4e7eff" stroke-width="6" fill="none" d="M 864 133 H 1090" />
+    <path stroke="#41b882" stroke-width="2" fill="none" d="M 311 133 V 189 H 207 V204" />
+    <path stroke="#9858ff" stroke-width="2" fill="none" d="M 487 133 V 189 H 559 V204" />
+    <path stroke="#ff6464" stroke-width="2" fill="none" d="M 687 133 V 189 H 819 V204" />
+    <path stroke="#4e7eff" stroke-width="2" fill="none" d="M 979 133 V 189 H 1051 V204" />
+    <text text-anchor="middle" x="207" y="252" font-family="Verdana" font-size="36" fill="#41b882">
+        <tspan>Name</tspan>
+    </text>
+    <text text-anchor="middle" x="559" y="252" font-family="Verdana" font-size="36" fill="#9858ff">
+        <tspan>Argument</tspan>
+    </text>
+    <text text-anchor="middle" x="819" y="252" font-family="Verdana" font-size="36" fill="#ff6464">
+        <tspan>Modifiers</tspan>
+    </text>
+    <text text-anchor="middle" x="1051" y="252" font-family="Verdana" font-size="36" fill="#4e7eff">
+        <tspan>Value</tspan>
+    </text>
+    <text y="302" font-family="Verdana" font-size="24" fill="#74a0c7">
+        <tspan x="153" dy="0">Starts with v-</tspan>
+        <tspan x="153" dy="32">May be omitted when</tspan>
+        <tspan x="153" dy="32">using shorthands</tspan>
+        <tspan x="153" dy="32"></tspan>
+    </text>
+    <text y="302" font-family="Verdana" font-size="24" fill="#74a0c7">
+        <tspan x="471" dy="0">Follows the colon</tspan>
+        <tspan x="471" dy="32">or shorthand</tspan>
+        <tspan x="471" dy="32">symbol</tspan>
+        <tspan x="153" dy="32"></tspan>
+    </text>
+    <text y="302" font-family="Verdana" font-size="24" fill="#74a0c7">
+        <tspan x="742" dy="0">Denoted by the</tspan>
+        <tspan x="742" dy="32">leading dot</tspan>
+        <tspan x="742" dy="32"></tspan>
+        <tspan x="153" dy="32"></tspan>
+    </text>
+    <text y="302" font-family="Verdana" font-size="24" fill="#74a0c7">
+        <tspan x="1004" dy="0">Interpreted as</tspan>
+        <tspan x="1004" dy="32">JavaScript expressions</tspan>
+        <tspan x="1004" dy="32"></tspan>
+        <tspan x="153" dy="32"></tspan>
+    </text>
+</svg>
