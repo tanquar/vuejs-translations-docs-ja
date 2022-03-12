@@ -121,7 +121,7 @@ SFC は、Vue を特徴付ける機能です。ビルドのセットアップが
 
 ## 2 つの API スタイル
 
-Vue コンポーネントを作成する際は、**Options API**、そして **コンポジション API** と呼ばれる 2 種類の異なる API スタイルが利用できます。
+Vue コンポーネントを作成する際は、**Options API**、そして **Composition API** と呼ばれる 2 種類の異なる API スタイルが利用できます。
 
 ### Options API
 
@@ -162,11 +162,11 @@ export default {
 
 [サンドボックスで試す](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgLy8gcmVhY3RpdmUgc3RhdGVcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgY291bnQ6IDBcbiAgICB9XG4gIH0sXG5cbiAgLy8gZnVuY3Rpb25zIHRoYXQgbXV0YXRlIHN0YXRlIGFuZCB0cmlnZ2VyIHVwZGF0ZXNcbiAgbWV0aG9kczoge1xuICAgIGluY3JlbWVudCgpIHtcbiAgICAgIHRoaXMuY291bnQrK1xuICAgIH1cbiAgfSxcblxuICAvLyBsaWZlY3ljbGUgaG9va3NcbiAgbW91bnRlZCgpIHtcbiAgICBjb25zb2xlLmxvZyhgVGhlIGluaXRpYWwgY291bnQgaXMgJHt0aGlzLmNvdW50fS5gKVxuICB9XG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPkNvdW50IGlzOiB7eyBjb3VudCB9fTwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4ifQ==)
 
-### コンポジション API
+### Composition API
 
-コンポジション API では、インポートした各種 API 関数を使ってコンポーネントのロジックを定義していきます。SFC において、コンポジション API は通常、[`<script setup>`](/api/sfc-script-setup) と組み合わせて使用します。`setup` という属性を付けることで、Vue にコンパイル時の変形操作を実行してほしいというヒントが伝えられます。これにより、定型的な書式の少ないコンポジション API を利用することができます。たとえば、`<script setup>` のなかで宣言したインポート、トップレベルの変数、トップレベルの関数は、テンプレート内で直接使うことができます。
+Composition API では、インポートした各種 API 関数を使ってコンポーネントのロジックを定義していきます。SFC において、Composition API は通常、[`<script setup>`](/api/sfc-script-setup) と組み合わせて使用します。`setup` という属性を付けることで、Vue にコンパイル時の変形操作を実行してほしいというヒントが伝えられます。これにより、定型的な書式の少ない Composition API を利用することができます。たとえば、`<script setup>` のなかで宣言したインポート、トップレベルの変数、トップレベルの関数は、テンプレート内で直接使うことができます。
 
-先ほどと同じコンポーネントを、テンプレート部分は同一のまま、コンポジション API と `<script setup>` に置き換えたサンプルとして以下に示します:
+先ほどと同じコンポーネントを、テンプレート部分は同一のまま、Composition API と `<script setup>` に置き換えたサンプルとして以下に示します:
 
 ```vue
 <script setup>
@@ -195,13 +195,13 @@ onMounted(() => {
 
 ### どちらを選ぶか？
 
-まず、どちらのスタイルの API でも、よくあるユースケースは全面的にカバーされます。両者はインターフェースが異なるものの、それを支える基盤のシステムはまったく同じです。事実として、Options API はコンポジション API を土台にしています！　Vue に関する基本的な考え方と必要な知識は、2 つのスタイル間で共通です。
+まず、どちらのスタイルの API でも、よくあるユースケースは全面的にカバーされます。両者はインターフェースが異なるものの、それを支える基盤のシステムはまったく同じです。事実として、Options API は Composition API を土台にしています！　Vue に関する基本的な考え方と必要な知識は、2 つのスタイル間で共通です。
 
 Options API の考え方は、「コンポーネントのインスタンス」(サンプルに見られる `this`) を中心とするもので、OOP 言語の経験のあるユーザーにとってはクラスベースの心理的モデルによく適合します。同時に、Options API ではリアクティブ性の細かな部分が抽象化され、各オプションのグループによってコードの構成が整理されるため、初心者にとって分かりやすいモデルでもあります。
 
-コンポジション API は、リアクティブな状態変数を関数のスコープ内で直接宣言し、複数の関数の組み合わせによって状態を組み立てて複雑な処理を扱おう、という考え方が中心にあります。より自由度が高い形式であるため、効果的な使い方をするには Vue のリアクティブ性がどのような仕組みで動くのかを理解しておく必要があります。その代わり、柔軟性が高いことから、さまざまなパターンに沿ってロジックの整理や再利用を強力に進めることができます。
+Composition API は、リアクティブな状態変数を関数のスコープ内で直接宣言し、複数の関数の組み合わせによって状態を組み立てて複雑な処理を扱おう、という考え方が中心にあります。より自由度が高い形式であるため、効果的な使い方をするには Vue のリアクティブ性がどのような仕組みで動くのかを理解しておく必要があります。その代わり、柔軟性が高いことから、さまざまなパターンに沿ってロジックの整理や再利用を強力に進めることができます。
 
-2 つのスタイル間の比較や、コンポジション API に秘められたメリットについては、[コンポジション API に関するよくある質問](/guide/extras/composition-api-faq)で詳しく説明しています。
+2 つのスタイル間の比較や、Composition API に秘められたメリットについては、[Composition API に関するよくある質問](/guide/extras/composition-api-faq)で詳しく説明しています。
 
 Vue を初めて使う方に、一般的な推奨事項をお伝えします:
 
@@ -211,7 +211,7 @@ Vue を初めて使う方に、一般的な推奨事項をお伝えします:
 
   - ビルドツールを利用しない予定の場合や、プログレッシブエンハンスメントなどの複雑性の低いシナリオで主に Vue を使う予定の場合は、Options API を選択します。 
 
-  - アプリケーション全体を Vue で構築する予定の場合は、コンポジション API と単一ファイルコンポーネントの組み合わせを使用します。
+  - アプリケーション全体を Vue で構築する予定の場合は、Composition API と単一ファイルコンポーネントの組み合わせを使用します。
 
 学習を進める段階では、どちらか一方のスタイルにこだわる必要はありません。このドキュメントの続きの部分に登場するコードサンプルは、該当する場合、両方のスタイルで提供されます。左サイドバーの上部にある **API 設定スイッチ**を使って、いつでもスタイルを切り替えることができます。
 
