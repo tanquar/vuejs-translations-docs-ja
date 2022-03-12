@@ -7,18 +7,17 @@ import VueMasteryModal from './VueMasteryModal.vue';
 <template>
   <section id="hero">
     <h1 class="tagline">
-      The
-      <span class="accent">Progressive</span>
-      <br />JavaScript Framework
+      <span class="accent">プログレッシブな</span>
+      <br />JavaScript フレームワーク
     </h1>
     <p class="description">
-      An approachable, performant and versatile framework for building web
-      user interfaces.
+      Web ユーザーインターフェースを構築するための、
+      親しみやすく、パフォーマンスと汎用性の高いフレームワーク。
     </p>
     <p class="actions">
       <vue-mastery-modal />
       <a class="get-started" href="/guide/introduction.html">
-        Get Started
+        始めてみる
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,13 +30,13 @@ import VueMasteryModal from './VueMasteryModal.vue';
           />
         </svg>
       </a>
-      <a class="setup" href="/guide/quick-start.html">Install</a>
+      <a class="setup" href="/guide/quick-start.html">インストール</a>
     </p>
   </section>
 
   <!-- TODO make dynamic based on data -->
   <section id="special-sponsor">
-    <span>Special Sponsor</span>
+    <span>特別スポンサー</span>
     <a href="https://www.dcloud.io/hbuilderx.html?hmsr=vue-en&hmpl=&hmcu=&hmkw=&hmci=">
       <picture>
         <source type="image/avif" srcset="/images/sponsors/hbuilder.avif" />
@@ -49,37 +48,37 @@ import VueMasteryModal from './VueMasteryModal.vue';
         />
       </picture>
     </a>
-    <span>Advanced IDE for Vue</span>
+    <span>Vue 対応の高機能 IDE</span>
   </section>
 
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
-      <h2>Approachable</h2>
+      <h2>親しみやすさ</h2>
       <p>
-        Builds on top of standard HTML, CSS and JavaScript with intuitive
-        API and world-class documentation.
+        直感的な API とワールドクラスのドキュメントを備え、
+        標準的な HTML、CSS、JavaScript を使って構築できます。
       </p>
     </div>
     <div class="vt-box">
-      <h2>Performant</h2>
+      <h2>高パフォーマンス</h2>
       <p>
-        Truly reactive, compiler-optimized rendering system that rarely
-        requires manual optimization.
+        手動での最適化をほとんど必要としない、
+        真にリアクティブでコンパイラーに最適化されたレンダリングシステム。
       </p>
     </div>
     <div class="vt-box">
-      <h2>Versatile</h2>
+      <h2>汎用性</h2>
       <p>
-        A rich, incrementally adoptable ecosystem that scales between a
-        library and a full-featured framework.
+        ライブラリとフル機能のフレームワークの間で拡張可能な、
+        リッチで段階的に採用可能なエコシステム。
       </p>
     </div>
   </section>
 
   <section id="sponsors">
-    <h2>Platinum Sponsors</h2>
+    <h2>プラチナスポンサー</h2>
     <SponsorsGroup tier="platinum" placement="landing" />
-    <h2>Gold Sponsors</h2>
+    <h2>ゴールドスポンサー</h2>
     <SponsorsGroup tier="gold" placement="landing" />
   </section>
 
