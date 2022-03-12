@@ -1,15 +1,15 @@
 <script setup>
 /**
- * Adding a new banner:
- * 1. uncomment the banner slot in ../index.ts
- * 2. uncomment and update BANNER_ID in ../../inlined-scripts/restorePreferences.ts
- * 3. update --vt-banner-height if necessary
+ * バナーの追加方法:
+ * 1. ../index.ts のbannerスロットをアンコメントする
+ * 2. ../../inlined-scripts/restorePreferences.ts の BANNER_ID をアンコメントし、更新する
+ * 3. update --vt-banner-height を実行する (必要に応じて)
  */
 
 let open = $ref(true)
 
 /**
- * Call this if the banner is dismissible
+ * バナーを閉じることができるようにするには、これを呼び出す
  */
 function dismiss() {
   open = false
@@ -20,11 +20,11 @@ function dismiss() {
 
 <template>
   <div class="banner" v-if="open">
-    Vue 3 is now the new default version!
+    Vue 3 が新しいデフォルトバージョンになりました!
     <a
       href="https://blog.vuejs.org/posts/vue-3-as-the-new-default.html"
       target="_blank"
-      >Learn more</a
+      >詳細</a
     >
   </div>
 </template>
